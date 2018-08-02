@@ -30,6 +30,13 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Home\admin.py" />
+    <Compile Include="Home\apps.py" />
+    <Compile Include="Home\migrations\__init__.py" />
+    <Compile Include="Home\models.py" />
+    <Compile Include="Home\tests.py" />
+    <Compile Include="Home\views.py" />
+    <Compile Include="Home\__init__.py" />
     <Compile Include="manage.py" />
     <Compile Include="ColinKWebsite\__init__.py" />
     <Compile Include="ColinKWebsite\settings.py" />
@@ -37,10 +44,14 @@
     <Compile Include="ColinKWebsite\wsgi.py" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Home\templates\index.html" />
     <Content Include="requirements.txt" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="ColinKWebsite\" />
+    <Folder Include="Home\" />
+    <Folder Include="Home\migrations\" />
+    <Folder Include="Home\templates\" />
   </ItemGroup>
   <ItemGroup>
     <Interpreter Include="env\">

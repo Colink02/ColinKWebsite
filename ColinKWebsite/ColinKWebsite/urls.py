@@ -3,12 +3,15 @@ Definition of urls for ColinKWebsite.
 """
 
 from django.conf.urls import include, url
-
+import Home.views
 # Uncomment the next two lines to enable the admin:
 # from django.contrib import admin
 # admin.autodiscover()
 
 urlpatterns = [
+    url(r'^$', Home.views.index, name='index'),
+    url(r'^home$', Home.views.index, name='home'),
+
     # Examples:
     # url(r'^$', ColinKWebsite.views.home, name='home'),
     # url(r'^ColinKWebsite/', include('ColinKWebsite.ColinKWebsite.urls')),
