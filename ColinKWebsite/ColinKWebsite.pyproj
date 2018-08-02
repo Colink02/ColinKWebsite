@@ -44,7 +44,7 @@
     <Compile Include="ColinKWebsite\wsgi.py" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Home\templates\index.html" />
+    <Content Include="Home\templates\Home\index.html" />
     <Content Include="requirements.txt" />
   </ItemGroup>
   <ItemGroup>
@@ -52,6 +52,7 @@
     <Folder Include="Home\" />
     <Folder Include="Home\migrations\" />
     <Folder Include="Home\templates\" />
+    <Folder Include="Home\templates\Home\" />
   </ItemGroup>
   <ItemGroup>
     <Interpreter Include="env\">
